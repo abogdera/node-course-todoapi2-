@@ -6,6 +6,6 @@ let db = {
   mlab: 'mongodb://abogdera:janzor1970@ds125831.mlab.com:25831/abogdera'
 };
 
-mongoose.connect(  db.mlab ||db.localhost);
-
+//mongoose.connect(  db.mlab ||db.localhost);
+mongoose.connect(  db.localhost);
 module.exports={mongoose}
