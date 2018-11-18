@@ -7,5 +7,5 @@ let db = {
 };
 
 //mongoose.connect(  db.mlab ||db.localhost);
-mongoose.connect(  db.localhost);
+mongoose.connect( process.env.MONGODB_URI);
 module.exports={mongoose}
